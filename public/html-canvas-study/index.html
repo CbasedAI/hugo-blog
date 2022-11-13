@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>HTML5 Canvas学习笔记 - 黄奋斗的数字缓存区</title><meta name="author" content="黄奋斗.eth">
+<meta name="author-link" content="https://wakehuang.com/about">
+<meta name="description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty" /><meta name="keywords" content='前端, HTML5' /><meta itemprop="name" content="HTML5 Canvas学习笔记">
+<meta itemprop="description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty"><meta itemprop="datePublished" content="2016-09-02T23:59:59+08:00" />
+<meta itemprop="dateModified" content="2022-11-06T12:01:32+08:00" />
+<meta itemprop="wordCount" content="3951"><meta itemprop="image" content="https://fixit.lruihao.cn/logo.png"/>
+<meta itemprop="keywords" content="前端,HTML5," /><meta property="og:title" content="HTML5 Canvas学习笔记" />
+<meta property="og:description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fixit.lruihao.cn/html-canvas-study/" /><meta property="og:image" content="https://fixit.lruihao.cn/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-09-02T23:59:59+08:00" />
+<meta property="article:modified_time" content="2022-11-06T12:01:32+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://fixit.lruihao.cn/logo.png"/>
+
+<meta name="twitter:title" content="HTML5 Canvas学习笔记"/>
+<meta name="twitter:description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fixit.lruihao.cn/html-canvas-study/" /><link rel="prev" href="https://fixit.lruihao.cn/computational-communication/" /><link rel="next" href="https://fixit.lruihao.cn/happy-lantern-festival/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "HTML5 Canvas学习笔记",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/"
+    },"image": ["https:\/\/fixit.lruihao.cn\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "前端, HTML5","wordcount":  3951 ,
+    "url": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/","datePublished": "2016-09-02T23:59:59+08:00","dateModified": "2022-11-06T12:01:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+      "@type": "Organization",
+      "name": "Lruihao","logo": {
+          "@type": "ImageObject",
+          "url": "https:\/\/fixit.lruihao.cn\/images\/avatar.png",
+          "width":  1080 ,
+          "height":  1080 
+        }},"author": {
+        "@type": "Person",
+        "name": "黄奋斗.eth"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="黄奋斗的数字缓存区"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/fixit.min.svg"
+    data-srcset="/fixit.min.svg, /fixit.min.svg 1.5x, /fixit.min.svg 2x"
+    data-sizes="auto"
+    alt="黄奋斗的数字缓存区"
+    title="黄奋斗的数字缓存区"/><span class="header-title-text">黄奋斗的数字缓存区</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 所有文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/documentation/"
+                title="主题文档"
+                
+              ><i class="fa-solid fa-book fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/friends/"
+                title="友情链接"
+                
+              ><i class="fa-solid fa-users fa-fw fa-sm" aria-hidden="true"></i> 友链</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a></li><li class="menu-item delimiter"></li><li class="menu-item language">
+            <span role="button" aria-label="选择语言" title="选择语言">简体中文<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </span>
+            <ul class="sub-menu"><li class="menu-item">没有更多翻译</li></ul>
+          </li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="黄奋斗的数字缓存区"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/fixit.min.svg"
+    data-srcset="/fixit.min.svg, /fixit.min.svg 1.5x, /fixit.min.svg 2x"
+    data-sizes="auto"
+    alt="/fixit.min.svg"
+    title="/fixit.min.svg"/><span class="header-title-text">黄奋斗的数字缓存区</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 所有文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/documentation/"
+                  title="主题文档"
+                  
+                ><i class="fa-solid fa-book fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/friends/"
+                  title="友情链接"
+                  
+                ><i class="fa-solid fa-users fa-fw fa-sm" aria-hidden="true"></i> 友链</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a></li><li
+              class="menu-item text-center"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/wakehuang"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fa-brands fa-github fa-fw' aria-hidden='true'></i> </a></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language">
+            <span role="button" aria-label="选择语言" title="选择语言">简体中文<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </span>
+            <select class="language-select" onchange="location = this.value;"><option disabled>没有更多翻译</option></select>
+          </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>HTML5 Canvas学习笔记</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://wakehuang.com/about" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="https://gravatar.loli.net/avatar/8f3c36dc96dffa0a79b434ffc25ff82a?s=32&amp;d=mp"
+    data-srcset="https://gravatar.loli.net/avatar/8f3c36dc96dffa0a79b434ffc25ff82a?s=32&amp;d=mp, https://gravatar.loli.net/avatar/8f3c36dc96dffa0a79b434ffc25ff82a?s=32&amp;d=mp 1.5x, https://gravatar.loli.net/avatar/8f3c36dc96dffa0a79b434ffc25ff82a?s=32&amp;d=mp 2x"
+    data-sizes="auto"
+    alt="黄奋斗.eth"
+    title="黄奋斗.eth"/>&nbsp;黄奋斗.eth</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title=2016-09-02&#32;23:59:59><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2016-09-02">2016-09-02</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 约 3951 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 预计阅读 8 分钟</span>&nbsp;<span id="/html-canvas-study/" class="comment-visitors" data-flag-title="HTML5 Canvas学习笔记">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="twikoo_visitors">-</span>&nbsp;次阅读
+            </span>&nbsp;<span id="/html-canvas-study/" class="comment-count" data-flag-title="HTML5 Canvas学习笔记">
+              <i class="fa-regular fa-comments fa-fw" aria-hidden="true"></i>&nbsp;<span id="twikoo-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1使用canvas元素">1.使用canvas元素</a></li>
+    <li><a href="#2绘制几何图形">2.绘制几何图形</a></li>
+    <li><a href="#3绘制字符串">3.绘制字符串</a></li>
+    <li><a href="#4-设置阴影">4. 设置阴影</a></li>
+    <li><a href="#5使用路径">5.使用路径</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="1使用canvas元素">1.使用canvas元素</h2>
+<p>在HTML页面上定义<code>&lt;canvas...&gt;</code>元素与定义其他普通元素并无任何不同，它除了可以指定<code>id</code>、<code>style</code>、<code>class</code>、<code>hidden</code>等通用属性之外，还可以指定如下两个属性：</p>
+<ul>
+<li><code>height</code>：该属性设置该画布组件高度</li>
+<li><code>width</code>：该属性设置该画布组件宽度</li>
+</ul>
+<p>在HTML网页上定义<code>&lt;canvas.../&gt;</code>元素，它只是一张“空白”的画布。为了在<code>&lt;canvas.../&gt;</code>元素上绘图，必须经过如下3步：</p>
+<ol>
+<li>获取<code>&lt;canvas.../&gt;</code>元素对应的DOM对象，这是一个<code>Canvas</code>对象</li>
+<li>调用Canvas对象的<code>getContent()</code>方法，该方法返回一个<code>CanvasRenderingContext2D</code>对象，该对象即可绘制图形。</li>
+<li>调用<code>CanvasRendingContext2D</code>对象的方法绘图。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;canvas&lt;/title&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;画图入门&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id=&#34;mc&#34; width=&#34;300&#34; height=&#34;180&#34; style=&#34;border: 1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        // 设置填充颜色
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#f00&#39;;
+</span></span><span class="line"><span class="cl">        // 绘制矩形
+</span></span><span class="line"><span class="cl">        ctx.fillRect(30,40,80,100);
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCFHD"
+    data-srcset="/img/bVCFHD, /img/bVCFHD 1.5x, /img/bVCFHD 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<h2 id="2绘制几何图形">2.绘制几何图形</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;rect&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;绘制图形&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id =&#34;mc&#34; width=&#34;400&#34; height=&#34;280&#34; style=&#34;boreder:1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        // 设置填充颜色
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#f00&#39;;
+</span></span><span class="line"><span class="cl">        // 填充一个矩形
+</span></span><span class="line"><span class="cl">        ctx.fillRect(30,20,120,60);
+</span></span><span class="line"><span class="cl">        // 设置填充颜色
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#ff0&#39;;
+</span></span><span class="line"><span class="cl">        // 填充一个矩形
+</span></span><span class="line"><span class="cl">        ctx.fillRect(80,60,120,60);
+</span></span><span class="line"><span class="cl">        // 设置线条颜色
+</span></span><span class="line"><span class="cl">        ctx.strokeStyle = &#34;#00f&#34;;
+</span></span><span class="line"><span class="cl">        // 设置线条宽度
+</span></span><span class="line"><span class="cl">        ctx.lineWidth = 10;
+</span></span><span class="line"><span class="cl">        // 绘制一个矩形边框
+</span></span><span class="line"><span class="cl">        ctx.strokeRect(30,130,120,60);
+</span></span><span class="line"><span class="cl">        // 设置线条颜色
+</span></span><span class="line"><span class="cl">        ctx.strokeStyle = &#39;#0ff&#39;;
+</span></span><span class="line"><span class="cl">        // 设置线条宽度
+</span></span><span class="line"><span class="cl">        ctx.lineJoin = &#39;round&#39;;
+</span></span><span class="line"><span class="cl">        // 绘制一个矩形边框
+</span></span><span class="line"><span class="cl">        ctx.strokeRect(80,160,120,60);
+</span></span><span class="line"><span class="cl">        // 设置线条颜色
+</span></span><span class="line"><span class="cl">        ctx.strokeStyle = &#39;#f0f&#39;;
+</span></span><span class="line"><span class="cl">        // 设置线条宽度
+</span></span><span class="line"><span class="cl">        ctx.lineJoin = &#39;bevel&#39;;
+</span></span><span class="line"><span class="cl">        // 绘制一个矩形边框
+</span></span><span class="line"><span class="cl">        ctx.strokeRect(130,190,120,60);
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCFHK"
+    data-srcset="/img/bVCFHK, /img/bVCFHK 1.5x, /img/bVCFHK 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<h2 id="3绘制字符串">3.绘制字符串</h2>
+<p><code>CanvasRenderingContext2D</code>为绘制文字提供了如下两个方法：</p>
+<ul>
+<li><code>fillText(String text,float x,float y,[float maxWidth])</code>：填充字符串</li>
+<li><code>stroke(String text,float x,float y,[float maxWidth])</code>:绘制字符串边框</li>
+</ul>
+<p>为了设置绘制字符串时所用的字体、字体对齐方式，<code>CanvasRenderingContext2D</code>还提供了如下两个属性：</p>
+<ul>
+<li><code>textAlign</code>：该属性支持<code>start</code>、<code>end</code>、<code>left</code>、<code>right</code>、<code>center</code>等属性值。</li>
+<li><code>textBaseAlign</code>：设置绘制字符串的垂直对齐方式，该属性支持<code>top</code>、<code>hanging</code>、<code>middle</code>、<code>alphabetic</code>、<code>idecgraphic</code>、<code>bottom</code>等属性值。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;绘制文字&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;绘制文字&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id= &#34;mc&#34; width=&#34;600&#34; height=&#34;280&#34; style=&#34;border: 1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type= &#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;00f&#39;;
+</span></span><span class="line"><span class="cl">        ctx.font = &#39;italic 50px 隶书&#39;;
+</span></span><span class="line"><span class="cl">        ctx.textBaseline = &#39;top&#39;;
+</span></span><span class="line"><span class="cl">        // 填充字符串
+</span></span><span class="line"><span class="cl">        ctx.fillText(&#39;填充文字&#39;,0,0);
+</span></span><span class="line"><span class="cl">        ctx.strokeStyle = &#39;#f0f&#39;;
+</span></span><span class="line"><span class="cl">        ctx.font = &#39;bold 45px 宋体&#39;;
+</span></span><span class="line"><span class="cl">        // 绘制字符串的边框
+</span></span><span class="line"><span class="cl">        ctx.strokeText(&#39;Canvas绘制文字边框&#39;,0,50);
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCJ6f"
+    data-srcset="/img/bVCJ6f, /img/bVCJ6f 1.5x, /img/bVCJ6f 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<h2 id="4-设置阴影">4. 设置阴影</h2>
+<p><code>CanvasRenderingContext2D</code>为设置图形阴影提供了如下属性：</p>
+<ul>
+<li><code>shadowBlur</code>：设置阴影的模糊度。该属性值是一个浮点数，该数值越大。阴影的模糊程度就越大。</li>
+<li><code>shadowColor</code>：设置阴影的颜色。</li>
+<li><code>shadowOffsetX</code>：设置阴影在X方向的偏移。</li>
+<li><code>shadowOffsetY</code>：设置阴影在Y方向的偏移。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;启用阴影&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;启用阴影&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id=&#34;mc&#34; width=&#34;600&#34; height=&#34;280&#34; style=&#34;border: 1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        // 设置阴影的模糊度
+</span></span><span class="line"><span class="cl">        ctx.shadowBlur = 5.6;
+</span></span><span class="line"><span class="cl">        // 设置阴影的颜色
+</span></span><span class="line"><span class="cl">        ctx.shadowColor = &#39;#222&#39;;
+</span></span><span class="line"><span class="cl">        // 设置阴影在X、Y方向的偏移
+</span></span><span class="line"><span class="cl">        ctx.shadowOffsetX = 10;
+</span></span><span class="line"><span class="cl">        ctx.shadowOffsetY = -6;
+</span></span><span class="line"><span class="cl">        ctx.font = &#39;italic 50px 隶书&#39;;
+</span></span><span class="line"><span class="cl">        ctx.textBaseline = &#39;top&#39;;
+</span></span><span class="line"><span class="cl">        // 填充字符串
+</span></span><span class="line"><span class="cl">        ctx.fillText(&#39;绘制阴影&#39;,0,0);
+</span></span><span class="line"><span class="cl">        ctx.strokeStyle = &#39;#f0f&#39;;
+</span></span><span class="line"><span class="cl">        ctx.font = &#39;bold 45px 宋体&#39;;
+</span></span><span class="line"><span class="cl">        // 绘制字符串的边框
+</span></span><span class="line"><span class="cl">        ctx.strokeText(&#39;绘制阴影&#39;,0,50);
+</span></span><span class="line"><span class="cl">        // 填充一个矩形区域
+</span></span><span class="line"><span class="cl">        ctx.fillRect(20,150,180,80);
+</span></span><span class="line"><span class="cl">        // 绘制一个矩形边框
+</span></span><span class="line"><span class="cl">        ctx.strokeRect(300,150,180,80);
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCJ82"
+    data-srcset="/img/bVCJ82, /img/bVCJ82 1.5x, /img/bVCJ82 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<h2 id="5使用路径">5.使用路径</h2>
+<p>CanvasRenderingContext2D并没有直接提供绘制图形、椭圆等几何图形的方法。为了在Canvas上绘制更复杂的图形，必须在Canvas上启用路径，借助于路径来绘制图形。</p>
+<p>在Canvas上使用路径，可按如下步骤进行：</p>
+<ol>
+<li>调用<code>CanvasRenderingContext2D</code>对象的<code>beginPath()</code>方法开始定义路径。</li>
+<li>调用<code>CanvasRenderingContext2D</code>各种方法添加子路径。</li>
+<li>调用<code>CanvasRenderingContext2D</code>的<code>closePath()</code>方法关闭子路径。</li>
+<li>调用<code>CanvasRenderingContext2D</code>的<code>fill()</code>或<code>stroke()</code>方法来填充路径或绘制路径边框。</li>
+</ol>
+<p><code>CanvasRenderingContext2D</code>对象提供了如下方法来添加子路径：</p>
+<ul>
+<li><code>arc(float x,float y,float radius,float startAngle,endAngle,boolean counterclockwise)</code>：向Canvas的当前路径上添加一段弧。绘制以x、y为圆心，<code>radius</code>为半径，从<code>startAngle</code>角度开始，到<code>endAngle</code>角度结束的圆弧。<code>startAngle</code>、<code>endAngle</code>以弧度为单位。<strong>该方法的前两个参数指定圆弧的圆心，第三个参数用于设置圆弧的半径，第四、五个参数则用于设置圆弧的开始角度、结束角度，最后一个角度用于设置是否顺时针旋转。</strong></li>
+<li><code>arcTo(float x1,float y1,float x2,float y2,float radius)</code>：向Canvas的当前路径上添加一段弧。与前一个方法相比，只是定义弧的方式不同。<strong>该方法也是绘制一段圆弧，确定这段圆弧的方式是：假设从当前点到 <em>P<sub>1</sub></em>(x<sub>1</sub>,y<sub>1</sub>)绘制一条线条，再从<em>P<sub>1</sub></em>(x<sub>1</sub>,y<sub>1</sub>)到<em>P<sub>2</sub></em>(x<sub>2</sub>,y<sub>2</sub>) 绘制一条线条，<code>arcTo()</code>则绘制一段同时与上面两条线条相切，且半径为<code>radius</code>的圆弧。</strong></li>
+<li><code>bezierCurveTo(float cpX1,float cpY1,float cpX2,float cpY2,float x,float y)</code>:向Canvas的当前路径上添加一段贝济埃曲线。</li>
+<li><code>lineTo(float x,float y)</code>:把Canvas的当前路径从当前结束点连接到x、y对应的点。</li>
+<li><code>moveTo(float x,float y)</code>:把Canvas的当前路径的结束点移动到x、y对应的点。</li>
+<li><code>quadraticCurveTo(float cpX,float cpY,float x,float y)</code>:向Canvas添加一段二次曲线。</li>
+<li><code>rect(float x,float y,float width,float height)</code>:向Canvas的当前路径添加一个矩形。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;绘制圆形&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;绘制圆形&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id=&#34;mc&#34; width=&#34;400&#34; height=&#34;280&#34; style=&#34;border: 1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        // 获取canva元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#34;mc&#34;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        for(var i = 0;i &lt; 10;i++){
+</span></span><span class="line"><span class="cl">            // 开始定义路径
+</span></span><span class="line"><span class="cl">            ctx.beginPath();
+</span></span><span class="line"><span class="cl">            // 添加一段圆弧
+</span></span><span class="line"><span class="cl">            ctx.arc(i * 25,i * 25,(i + 1) * 8,0, Math.PI * 2 ,true);
+</span></span><span class="line"><span class="cl">            // 关闭路径
+</span></span><span class="line"><span class="cl">            ctx.closePath();
+</span></span><span class="line"><span class="cl">            // 设置填充颜色
+</span></span><span class="line"><span class="cl">            ctx.fillStyle = &#39;rgba(255,0,255,&#39;+(10-i)*0.1+&#39;)&#39;;
+</span></span><span class="line"><span class="cl">            // 填充当前路径
+</span></span><span class="line"><span class="cl">            ctx.fill();
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCKaO"
+    data-srcset="/img/bVCKaO, /img/bVCKaO 1.5x, /img/bVCKaO 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<p>使用<code>arcTo()</code>方法绘制一个圆角矩形。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;arcTo示例&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt; arcTo 示意&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id = &#39;mc&#39; width = &#39;400&#39; height=&#34;280&#34; style=&#34;border: 1px solid black&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        /*
+</span></span><span class="line"><span class="cl">            该方法负责绘制圆角矩形
+</span></span><span class="line"><span class="cl">            x1、y1:圆角矩形左上角的坐标
+</span></span><span class="line"><span class="cl">            width、height:控制圆角矩形的宽、高
+</span></span><span class="line"><span class="cl">            radius:控制圆角矩形的四个圆角的半径
+</span></span><span class="line"><span class="cl">         */
+</span></span><span class="line"><span class="cl">        function createRoundRect(ctx, x1, y1, width, height, radius)
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            // 移动到左上角
+</span></span><span class="line"><span class="cl">            ctx.moveTo(x1 + radius,y1);
+</span></span><span class="line"><span class="cl">            // 添加一条连接到右上角的线段
+</span></span><span class="line"><span class="cl">            ctx.lineTo(x1 + width - radius,y1);
+</span></span><span class="line"><span class="cl">            // 添加一段圆弧
+</span></span><span class="line"><span class="cl">            ctx.arcTo(x1 + width, y1, x1 + width, y1 + radius, radius);
+</span></span><span class="line"><span class="cl">            // 添加一条连接到右下角的线段
+</span></span><span class="line"><span class="cl">            ctx.lineTo(x1 + width, y1 + height - radius);
+</span></span><span class="line"><span class="cl">            // 添加一段圆弧
+</span></span><span class="line"><span class="cl">            ctx.arcTo(x1 + width, y1 + height, x1 + width - radius, y1 + height, radius);
+</span></span><span class="line"><span class="cl">            // 添加一条连接到左下角的线段
+</span></span><span class="line"><span class="cl">            ctx.lineTo(x1 + radius, y1 + height);
+</span></span><span class="line"><span class="cl">            // 添加一段圆弧
+</span></span><span class="line"><span class="cl">            ctx.arcTo(x1, y1 + height, x1, y1 + height - radius, radius);
+</span></span><span class="line"><span class="cl">            // 添加一条连接到左上角的线段
+</span></span><span class="line"><span class="cl">            ctx.lineTo(x1,y1 + radius);
+</span></span><span class="line"><span class="cl">            //添加一段圆弧
+</span></span><span class="line"><span class="cl">            ctx.arcTo(x1, y1, x1 + radius, y1, radius);
+</span></span><span class="line"><span class="cl">            ctx.closePath();
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContex2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        ctx.lineWidth = 3;
+</span></span><span class="line"><span class="cl">        createRoundRect(ctx, 30, 30, 200, 100, 20);
+</span></span><span class="line"><span class="cl">        ctx.stroke();
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCKgJ"
+    data-srcset="/img/bVCKgJ, /img/bVCKgJ 1.5x, /img/bVCKgJ 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+<p>其中<code>moveTo(x,y)</code>和`lineToo(x,y)，前者是把绘制点移动到指定点，而后者则负责绘制从当前点到指定点(x,y)的线条。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;lineTo示例&lt;/title&gt;
+</span></span><span class="line"><span class="cl">    &lt;h2&gt;lineTo示例&lt;/h2&gt;
+</span></span><span class="line"><span class="cl">    &lt;canvas id = &#34;mc&#34; width = &#34;500&#34; height=&#34;380&#34; style=&#34;border: 1px solid black;&#34;&gt;&lt;/canvas&gt;
+</span></span><span class="line"><span class="cl">    &lt;script type=&#34;text/javascript&#34;&gt;
+</span></span><span class="line"><span class="cl">        /*
+</span></span><span class="line"><span class="cl">            该方法负责绘制多角星
+</span></span><span class="line"><span class="cl">            n: 该参数通常应设为奇数,控制绘制N角星
+</span></span><span class="line"><span class="cl">            dx、dy: 控制N角星的位置
+</span></span><span class="line"><span class="cl">            size: 控制N角星的大小
+</span></span><span class="line"><span class="cl">         */
+</span></span><span class="line"><span class="cl">        function createStar(context, n, dx, dy, size)
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            // 开始创建路径
+</span></span><span class="line"><span class="cl">            context.beginPath();
+</span></span><span class="line"><span class="cl">            var dig = Math.PI / n * 4;
+</span></span><span class="line"><span class="cl">            context.moveTo(dx, y + dy);
+</span></span><span class="line"><span class="cl">            for(var i = 0; i &lt; n; i++)
+</span></span><span class="line"><span class="cl">            {
+</span></span><span class="line"><span class="cl">                var x = Math.sin(i * dig);
+</span></span><span class="line"><span class="cl">                var y = Math.cos(i * dig);
+</span></span><span class="line"><span class="cl">                // 绘制从当前点连接到指定点的线条
+</span></span><span class="line"><span class="cl">                context.lineTo(x * size + dx, y * size + dy);
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">            // 关闭路径
+</span></span><span class="line"><span class="cl">            context.closePath();
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">        // 获取canvas元素对应的DOM对象
+</span></span><span class="line"><span class="cl">        var canvas = document.getElementById(&#39;mc&#39;);
+</span></span><span class="line"><span class="cl">        // 获取在canvas上绘图的CanvasRenderingContext2D对象
+</span></span><span class="line"><span class="cl">        var ctx = canvas.getContext(&#39;2d&#39;);
+</span></span><span class="line"><span class="cl">        // 绘制3角星
+</span></span><span class="line"><span class="cl">        createStar(ctx, 3, 60, 60, 50);
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#f00&#39;;
+</span></span><span class="line"><span class="cl">        ctx.fill();
+</span></span><span class="line"><span class="cl">        // 绘制5角星
+</span></span><span class="line"><span class="cl">        createStar(ctx, 5, 160, 60, 50);
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#0f0&#39;;
+</span></span><span class="line"><span class="cl">        ctx.fill();
+</span></span><span class="line"><span class="cl">        // 绘制7角星
+</span></span><span class="line"><span class="cl">        createStar(ctx, 7, 260, 60, 50);
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#00f&#39;;
+</span></span><span class="line"><span class="cl">        ctx.fill();
+</span></span><span class="line"><span class="cl">        // 绘制9角星
+</span></span><span class="line"><span class="cl">        createStar(ctx, 9, 360, 60, 50);
+</span></span><span class="line"><span class="cl">        ctx.fillStyle = &#39;#f0f&#39;;
+</span></span><span class="line"><span class="cl">        ctx.fill();
+</span></span><span class="line"><span class="cl">    &lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">&lt;body&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/body&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/img/bVCKjo"
+    data-srcset="/img/bVCKjo, /img/bVCKjo 1.5x, /img/bVCKjo 2x"
+    data-sizes="auto"
+    alt="clipboard.png"
+    title="clipboard.png"/></p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2022-11-06&#32;12:01:32>更新于 2022-11-06&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/html-canvas-study/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://fixit.lruihao.cn/html-canvas-study/" data-title="HTML5 Canvas学习笔记" data-via="0xwakehuang" data-hashtags="前端,HTML5"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://fixit.lruihao.cn/html-canvas-study/" data-hashtag="前端"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://fixit.lruihao.cn/html-canvas-study/" data-title="HTML5 Canvas学习笔记"><i class="fa-brands fa-hacker-news fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://fixit.lruihao.cn/html-canvas-study/" data-title="HTML5 Canvas学习笔记"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://fixit.lruihao.cn/html-canvas-study/" data-title="HTML5 Canvas学习笔记"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 人人" data-sharer="renren" data-url="https://fixit.lruihao.cn/html-canvas-study/"><i class="fa-brands fa-renren fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>,&nbsp;<a href="/tags/html5/">HTML5</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/computational-communication/" class="post-nav-item" rel="prev" title="计算传播学：传播学研究新视角"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>计算传播学：传播学研究新视角</a>
+      <a href="/happy-lantern-festival/" class="post-nav-item" rel="next" title="2018元宵节快乐！🥳">2018元宵节快乐！🥳<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment">「觉得内容不错，请作者喝杯牛奶吧～🥛」</div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways"><div>
+            <img src="/images/alipay.png" alt="黄奋斗.eth 支付宝">
+            <span data-animation>支付宝</span>
+          </div><div>
+            <img src="/images/wechatpay.png" alt="黄奋斗.eth 微信">
+            <span data-animation>微信</span>
+          </div></div>
+  </div><div id="comments"><div id="twikoo"></div><noscript>
+        Please enable JavaScript to view the comments powered by <a href="https://twikoo.js.org/" rel="external nofollow noopener noreferrer">Twikoo</a>.
+      </noscript><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="wakehuang/hugo-giscus-discussion"
+            data-repo-id="R_kgDOIbKuuQ"
+            data-category="General"
+            data-category-id="DIC_kwDOIbKuuc4CShhB"
+            data-mapping="title"
+            data-term="pathname"
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="1"
+            data-input-position="top"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+          <noscript>
+            Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+          </noscript>
+        </div></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.105.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.17-RC"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://wakehuang.com/about"target="_blank" rel="external nofollow noopener noreferrer">黄奋斗.eth</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='网站运行中 ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i>&nbsp;<span class="run-times">网站运行中 ...</span></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/wakehuang" title="在 GitHub 上查看源代码"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;--bg-progress: #000;--bg-progress-dark: #fff;"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/twikoo/twikoo.all.min.js" defer></script><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/lib/pangu/pangu.min.js" defer></script><script src="/lib/cell-watermark/watermark.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark_dimmed","lightTheme":"light"},"twikoo":{"commentCount":true,"el":"#twikoo","envId":"https://twikoo.wakehuang.com","lang":"zh-cn"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"enablePangu":true,"lightgallery":true,"search":{"algoliaAppID":"YKOM6PKLUY","algoliaIndex":"index.zh-cn","algoliaSearchKey":"a44c110d3ac360be2c69cd79d34b77a8","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"siteTime":"2022-11-05T20:00:00+08:00","watermark":{"content":"\u003cimg class=\"fixit-icon\" src=\"/fixit.min.svg\" alt=\"FixIt logo\" /\u003e FixIt 主题","enable":true,"height":21,"opacity":0.0125}};</script><script src="/js/theme.min.js" defer></script><script src="/js/custom.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-C0X6D1DH2Z', { 'anonymize_ip': true });
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-C0X6D1DH2Z" async></script></body>
+</html>
