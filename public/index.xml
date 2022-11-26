@@ -1,18 +1,26 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>自我周旋-黄奋斗的独立博客</title>
+    <title>未来道具研究所-黄奋斗的独立博客</title>
     <link>https://wakehuang.com/</link>
     <description>Hugo 主题 - FixIt</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
-      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</lastBuildDate>
+      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</lastBuildDate>
       <atom:link href="https://wakehuang.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-  <title>从零学习微信小程序开发（更新中）</title>
-  <link>https://wakehuang.com/miniprogram-basic-development/</link>
+  <title>从零开始学习Git版本控制（20221127更新）</title>
+  <link>https://wakehuang.com/learn-git-from-scratch/</link>
+  <pubDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://wakehuang.com/learn-git-from-scratch/</guid>
+  <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 3. 初次运行 Git 前的配置 3.1 在 Git 中设置用户名 Git 使用用户名user.n]]></description>
+</item>
+<item>
+  <title>从零开始学习微信小程序开发（20221126更新）</title>
+  <link>https://wakehuang.com/learn-miniprogram-from-scratch/</link>
   <pubDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://wakehuang.com/miniprogram-basic-development/</guid>
-  <description><![CDATA[导读 本文在查阅参考相关资料后，旨在帮助初学者快速理解和入门微信小程序开发的重要概念。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。]]></description>
+  <guid>https://wakehuang.com/learn-miniprogram-from-scratch/</guid>
+  <description><![CDATA[导读 本专题旨在帮助初学者快速理解和入门微信小程序开发的重要概念和基本用法。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。小程序借助]]></description>
 </item>
 <item>
   <title>Reboot：重新写博客了！🥳</title>

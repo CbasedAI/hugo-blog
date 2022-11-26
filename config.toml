@@ -1,4 +1,4 @@
-title = "自我周旋-黄奋斗的独立博客"
+title = "未来道具研究所-黄奋斗的独立博客"
 baseURL = "https://wakehuang.com/"
 
 # theme
@@ -197,7 +197,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = "/images/avatar.png"
       # title name
       # 标题名称
-      name = "自我周旋"
+      name = "未来道具研究所"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -605,7 +605,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = false
+      Evernote = true
       Skype = false
       Trello = false
       Mix = false
@@ -1211,7 +1211,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           icon = "fa-solid fa-archive"
       [[languages.zh-cn.menu.main]]
         identifier = "course"
-        name = "体系课🔥"
+        name = "精选课🔥"
         url = "categories/course/"
         weight = 2
         [languages.zh-cn.menu.main.params]

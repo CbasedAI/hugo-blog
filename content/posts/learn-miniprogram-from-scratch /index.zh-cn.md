@@ -1,10 +1,10 @@
 ---
-title: "从零学习微信小程序开发（更新中）"
+title: "从零开始学习微信小程序开发（20221126更新）"
 date: 2022-11-24T00:00:00+08:00
 draft: false
 description: ""
 tags: ["小程序"]
-categories: ["编程","course"]
+categories: ["编程开发","course"]
 
 resources:
 - name: "featured-image"
@@ -25,7 +25,7 @@ menu:
 ---
 
 {{< admonition notice 导读>}}
-本文在查阅参考相关资料后，旨在帮助初学者快速理解和入门**微信小程序开发的重要概念**。
+本专题旨在帮助初学者快速理解和入门**微信小程序开发的重要概念和基本用法**。
 {{< /admonition >}}
 
 # 小程序宿主环境
