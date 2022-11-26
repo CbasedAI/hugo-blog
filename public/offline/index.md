@@ -12,5 +12,5 @@ keywords:
 ---
 
 > 作者: [黄奋斗.eth](https://wakehuang.com/about)  
-> URL: https://fixit.lruihao.cn/offline/  
+> URL: https://wakehuang.com/offline/  
 

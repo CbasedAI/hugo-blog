@@ -9,24 +9,23 @@
 <meta name="author-link" content="https://wakehuang.com/about">
 <meta name="description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty" /><meta name="keywords" content='前端, HTML5' /><meta itemprop="name" content="HTML5 Canvas学习笔记">
 <meta itemprop="description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty"><meta itemprop="datePublished" content="2016-09-02T23:59:59+08:00" />
-<meta itemprop="dateModified" content="2022-11-06T12:01:32+08:00" />
-<meta itemprop="wordCount" content="3951"><meta itemprop="image" content="https://fixit.lruihao.cn/logo.png"/>
+<meta itemprop="dateModified" content="2022-11-15T00:08:15+08:00" />
+<meta itemprop="wordCount" content="3951"><meta itemprop="image" content="https://fixit.lruihao.cn/html-canvas-study/html-canvas-study-image.png">
 <meta itemprop="keywords" content="前端,HTML5," /><meta property="og:title" content="HTML5 Canvas学习笔记" />
 <meta property="og:description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fixit.lruihao.cn/html-canvas-study/" /><meta property="og:image" content="https://fixit.lruihao.cn/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://fixit.lruihao.cn/html-canvas-study/" /><meta property="og:image" content="https://fixit.lruihao.cn/html-canvas-study/html-canvas-study-image.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-09-02T23:59:59+08:00" />
-<meta property="article:modified_time" content="2022-11-06T12:01:32+08:00" />
+<meta property="article:modified_time" content="2022-11-15T00:08:15+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://fixit.lruihao.cn/logo.png"/>
-
+<meta name="twitter:image" content="https://fixit.lruihao.cn/html-canvas-study/html-canvas-study-image.png"/>
 <meta name="twitter:title" content="HTML5 Canvas学习笔记"/>
 <meta name="twitter:description" content="1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty"/>
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fixit.lruihao.cn/html-canvas-study/" /><link rel="prev" href="https://fixit.lruihao.cn/computational-communication/" /><link rel="next" href="https://fixit.lruihao.cn/happy-lantern-festival/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://fixit.lruihao.cn/html-canvas-study/" /><link rel="prev" href="https://fixit.lruihao.cn/computational-communication/" /><link rel="next" href="https://fixit.lruihao.cn/reboot/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
@@ -35,8 +34,13 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/"
-    },"image": ["https:\/\/fixit.lruihao.cn\/images\/Apple-Devices-Preview.jpg"],"genre": "posts","keywords": "前端, HTML5","wordcount":  3951 ,
-    "url": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/","datePublished": "2016-09-02T23:59:59+08:00","dateModified": "2022-11-06T12:01:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/html-canvas-study-image.png",
+              "width":  1916 ,
+              "height":  1076 
+            }],"genre": "posts","keywords": "前端, HTML5","wordcount":  3951 ,
+    "url": "https:\/\/fixit.lruihao.cn\/html-canvas-study\/","datePublished": "2016-09-02T23:59:59+08:00","dateModified": "2022-11-15T00:08:15+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "Lruihao","logo": {
           "@type": "ImageObject",
@@ -238,7 +242,14 @@
             </span>&nbsp;<span id="/html-canvas-study/" class="comment-count" data-flag-title="HTML5 Canvas学习笔记">
               <i class="fa-regular fa-comments fa-fw" aria-hidden="true"></i>&nbsp;<span id="twikoo-comment-count">-</span>&nbsp;条评论
             </span>&nbsp;</div>
-    </div><div class="details toc" id="toc-static" data-kept="false">
+    </div><div class="featured-image"><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="/html-canvas-study/html-canvas-study-image.png"
+    data-srcset="/html-canvas-study/html-canvas-study-image.png, /html-canvas-study/html-canvas-study-image.png 1.5x, /html-canvas-study/html-canvas-study-image.png 2x"
+    data-sizes="auto"
+    alt="/html-canvas-study/html-canvas-study-image.png"
+    title="/html-canvas-study/html-canvas-study-image.png"/></div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
           <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
@@ -937,7 +948,7 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-11-06&#32;12:01:32>更新于 2022-11-06&nbsp;</span>
+        <span title=2022-11-15&#32;00:08:15>更新于 2022-11-15&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
@@ -963,7 +974,7 @@
   </div>
 
   <div class="post-nav"><a href="/computational-communication/" class="post-nav-item" rel="prev" title="计算传播学：传播学研究新视角"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>计算传播学：传播学研究新视角</a>
-      <a href="/happy-lantern-festival/" class="post-nav-item" rel="next" title="2018元宵节快乐！🥳">2018元宵节快乐！🥳<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+      <a href="/reboot/" class="post-nav-item" rel="next" title="#Reboot：重新写博客了！🥳">#Reboot：重新写博客了！🥳<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div class="post-reward">
     <div class="comment">「觉得内容不错，请作者喝杯牛奶吧～🥛」</div>

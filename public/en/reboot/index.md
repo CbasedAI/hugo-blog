@@ -9,12 +9,12 @@ package main
 import "fmt"
 
 func main() {  
-    fmt.Println("Hello World")
+    fmt.Println("Hello World!")
 }
 ```
 
 ---
 
 > Author: Wake Huang.eth  
-> URL: https://fixit.lruihao.cn/en/reboot/  
+> URL: https://wakehuang.com/en/reboot/  
 

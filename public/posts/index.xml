@@ -1,104 +1,92 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>所有文章 - 黄奋斗的数字缓存区</title>
-    <link>https://fixit.lruihao.cn/posts/</link>
-    <description>所有文章 | 黄奋斗的数字缓存区</description>
+    <title>所有文章 - 自我周旋-黄奋斗的独立博客</title>
+    <link>https://wakehuang.com/posts/</link>
+    <description>所有文章 | 自我周旋-黄奋斗的独立博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
-      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</lastBuildDate><atom:link href="https://fixit.lruihao.cn/posts/" rel="self" type="application/rss+xml" /><item>
-  <title>雪国列车</title>
-  <link>https://fixit.lruihao.cn/snowpiercer/</link>
-  <pubDate>Fri, 02 Oct 2015 23:20:55 &#43;0800</pubDate>
+      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://wakehuang.com/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>从零学习微信小程序开发（更新中）</title>
+  <link>https://wakehuang.com/miniprogram-basic-development/</link>
+  <pubDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/snowpiercer/</guid>
-  <description><![CDATA[前言 多年前的旧文重新搬运回来，没想到竟然被人偷天换日改了个标题，连错别字和病句一个字都没改就登在某浙的一所理工大学的校园网，也是醉了… 奉劝某]]></description>
-</item>
-<item>
-  <title>2018元宵节快乐！🥳</title>
-  <link>https://fixit.lruihao.cn/happy-lantern-festival/</link>
-  <pubDate>Fri, 02 Mar 2018 22:59:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/happy-lantern-festival/</guid>
-  <description><![CDATA[宇宙是口锅，星辰是元宵 我是在白雪国生活的黑芝麻人 即使漂浮在锅口，即使沉没在锅底 有时候，还是想成为… 天上那轮半明半暗的黄色小船🌛]]></description>
+  <guid>https://wakehuang.com/miniprogram-basic-development/</guid>
+  <description><![CDATA[导读 本文在查阅参考相关资料后，旨在帮助初学者快速理解和入门微信小程序开发的重要概念。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。]]></description>
 </item>
 <item>
   <title>计算传播学：传播学研究新视角</title>
-  <link>https://fixit.lruihao.cn/computational-communication/</link>
+  <link>https://wakehuang.com/computational-communication/</link>
   <pubDate>Mon, 25 Apr 2016 23:29:59 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/computational-communication/</guid>
-  <description><![CDATA[概述 计算传播学作为一门跨领域和交叉性较强的新兴学科，可以借助复杂网络理论和社会计算等研究方法，再现信息传播的演化过程，建立信息传播和扩散模型]]></description>
-</item>
-<item>
-  <title>HTML5 Canvas学习笔记</title>
-  <link>https://fixit.lruihao.cn/html-canvas-study/</link>
-  <pubDate>Fri, 02 Sep 2016 23:59:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/html-canvas-study/</guid>
-  <description><![CDATA[1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty]]></description>
+  <guid>https://wakehuang.com/computational-communication/</guid>
+  <description><![CDATA[概述 近年来，由于人们获取信息、传播信息的方式的显著变化，经典的大众传播理论范式已经无法满足现实需要。而涉及领域广泛的计算传播学应运而生蓬勃发]]></description>
 </item>
 <item>
   <title>无题</title>
-  <link>https://fixit.lruihao.cn/untitled/</link>
+  <link>https://wakehuang.com/untitled/</link>
   <pubDate>Wed, 13 Nov 2013 18:48:59 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/untitled/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>#Reboot：重新写博客了！🥳</title>
-  <link>https://fixit.lruihao.cn/reboot/</link>
-  <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/reboot/</guid>
-  <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World&#34;) }]]></description>
-</item>
-<item>
-  <title>#Reboot：重新写博客了！🥳</title>
-  <link>https://fixit.lruihao.cn/reboot/</link>
-  <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/reboot/</guid>
-  <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World&#34;) }]]></description>
-</item>
-<item>
-  <title>2018元宵节快乐！🥳</title>
-  <link>https://fixit.lruihao.cn/happy-lantern-festival/</link>
-  <pubDate>Fri, 02 Mar 2018 22:59:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/happy-lantern-festival/</guid>
-  <description><![CDATA[宇宙是口锅，星辰是元宵 我是在白雪国生活的黑芝麻人 即使漂浮在锅口，即使沉没在锅底 有时候，还是想成为… 天上那轮半明半暗的黄色小船🌛]]></description>
-</item>
-<item>
-  <title>HTML5 Canvas学习笔记</title>
-  <link>https://fixit.lruihao.cn/html-canvas-study/</link>
-  <pubDate>Fri, 02 Sep 2016 23:59:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/html-canvas-study/</guid>
-  <description><![CDATA[1.使用canvas元素 在HTML页面上定义&lt;canvas...&gt;元素与定义其他普通元素并无任何不同，它除了可以指定id、sty]]></description>
-</item>
-<item>
-  <title>计算传播学：传播学研究新视角</title>
-  <link>https://fixit.lruihao.cn/computational-communication/</link>
-  <pubDate>Mon, 25 Apr 2016 23:29:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/computational-communication/</guid>
-  <description><![CDATA[概述 计算传播学作为一门跨领域和交叉性较强的新兴学科，可以借助复杂网络理论和社会计算等研究方法，再现信息传播的演化过程，建立信息传播和扩散模型]]></description>
+  <guid>https://wakehuang.com/untitled/</guid>
+  <description><![CDATA[<p>2013年的十一月，我受困于自己人生的严冬，夭折成龙，不得解脱。</p>
+<p>每到星期三晚间这个时候，我总像一条色彩斑斓的毛毛虫四处蠕动着（要是有女生看到我这样肯定会忍不住惊声尖叫），无论是软趴趴地趴在书桌前，还是干脆就像一具冰冷的尸体一般一头睡倒在床榻上，而更多的时候就像是那些电视常出现的医疗场景里的身着白衣的医护人员一样，在无影的手术灯冷彻灯光的照射下，围着眼前宛若巨大的子宫一般的电脑，手指纷舞，面无血色地挥霍着自己余下已经不多的时光，至于节操什么的，青春什么的我已经忘了是什么东西&hellip;..</p>
+<p>但也就是到了此时，我心里总会出现一个桀骜不驯的声音在咆哮：不能颓！你还有随笔要写！</p>]]></description>
 </item>
 <item>
   <title>雪国列车</title>
-  <link>https://fixit.lruihao.cn/snowpiercer/</link>
+  <link>https://wakehuang.com/snowpiercer/</link>
   <pubDate>Fri, 02 Oct 2015 23:20:55 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/snowpiercer/</guid>
-  <description><![CDATA[前言 多年前的旧文重新搬运回来，没想到竟然被人偷天换日改了个标题，连错别字和病句一个字都没改就登在某浙的一所理工大学的校园网，也是醉了… 奉劝某]]></description>
+  <guid>https://wakehuang.com/snowpiercer/</guid>
+  <description><![CDATA[雪国列车里狭窄逼仄如同产道的的车厢场景原本注定是要大放异彩的，而事实上，在影片的前半段也确实如此：单机游戏闯关般的情节环环相扣，悬念此起彼伏]]></description>
+</item>
+<item>
+  <title>Reboot：重新写博客了！🥳</title>
+  <link>https://wakehuang.com/reboot/</link>
+  <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/reboot/</guid>
+  <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) }]]></description>
+</item>
+<item>
+  <title>从零学习微信小程序开发（更新中）</title>
+  <link>https://wakehuang.com/miniprogram-basic-development/</link>
+  <pubDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/miniprogram-basic-development/</guid>
+  <description><![CDATA[导读 本文在查阅参考相关资料后，旨在帮助初学者快速理解和入门微信小程序开发的重要概念。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。]]></description>
+</item>
+<item>
+  <title>Reboot：重新写博客了！🥳</title>
+  <link>https://wakehuang.com/reboot/</link>
+  <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/reboot/</guid>
+  <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) }]]></description>
+</item>
+<item>
+  <title>计算传播学：传播学研究新视角</title>
+  <link>https://wakehuang.com/computational-communication/</link>
+  <pubDate>Mon, 25 Apr 2016 23:29:59 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/computational-communication/</guid>
+  <description><![CDATA[概述 近年来，由于人们获取信息、传播信息的方式的显著变化，经典的大众传播理论范式已经无法满足现实需要。而涉及领域广泛的计算传播学应运而生蓬勃发]]></description>
+</item>
+<item>
+  <title>雪国列车</title>
+  <link>https://wakehuang.com/snowpiercer/</link>
+  <pubDate>Fri, 02 Oct 2015 23:20:55 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/snowpiercer/</guid>
+  <description><![CDATA[雪国列车里狭窄逼仄如同产道的的车厢场景原本注定是要大放异彩的，而事实上，在影片的前半段也确实如此：单机游戏闯关般的情节环环相扣，悬念此起彼伏]]></description>
 </item>
 <item>
   <title>无题</title>
-  <link>https://fixit.lruihao.cn/untitled/</link>
+  <link>https://wakehuang.com/untitled/</link>
   <pubDate>Wed, 13 Nov 2013 18:48:59 &#43;0800</pubDate>
   <author>黄奋斗.eth</author>
-  <guid>https://fixit.lruihao.cn/untitled/</guid>
-  <description><![CDATA[]]></description>
+  <guid>https://wakehuang.com/untitled/</guid>
+  <description><![CDATA[<p>2013年的十一月，我受困于自己人生的严冬，夭折成龙，不得解脱。</p>
+<p>每到星期三晚间这个时候，我总像一条色彩斑斓的毛毛虫四处蠕动着（要是有女生看到我这样肯定会忍不住惊声尖叫），无论是软趴趴地趴在书桌前，还是干脆就像一具冰冷的尸体一般一头睡倒在床榻上，而更多的时候就像是那些电视常出现的医疗场景里的身着白衣的医护人员一样，在无影的手术灯冷彻灯光的照射下，围着眼前宛若巨大的子宫一般的电脑，手指纷舞，面无血色地挥霍着自己余下已经不多的时光，至于节操什么的，青春什么的我已经忘了是什么东西&hellip;..</p>
+<p>但也就是到了此时，我心里总会出现一个桀骜不驯的声音在咆哮：不能颓！你还有随笔要写！</p>]]></description>
 </item>
 </channel>
 </rss>

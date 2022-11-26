@@ -2,118 +2,115 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://fixit.lruihao.cn/reboot/</loc><lastmod>2022-11-06T01:05:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>https://wakehuang.com/categories/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/reboot/"
+            href="https://wakehuang.com/en/categories/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/reboot/"
+          href="https://wakehuang.com/categories/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/categories/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/posts/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/categories/"
+            href="https://wakehuang.com/en/posts/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/categories/"
+          href="https://wakehuang.com/posts/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/tags/go/</loc><lastmod>2022-11-06T01:05:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>https://wakehuang.com/tags/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/tags/go/"
+            href="https://wakehuang.com/en/tags/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/tags/go/"
+          href="https://wakehuang.com/tags/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/posts/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/categories/%E7%BC%96%E7%A8%8B/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/miniprogram-basic-development/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/</loc><lastmod>2022-11-26T22:32:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/posts/"
+            href="https://wakehuang.com/en/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/posts/"
+          href="https://wakehuang.com/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/tags/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/tags/go/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/tags/"
+            href="https://wakehuang.com/en/tags/go/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/tags/"
+          href="https://wakehuang.com/tags/go/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/reboot/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/"
+            href="https://wakehuang.com/en/reboot/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/"
+          href="https://wakehuang.com/reboot/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/categories/%E5%86%99%E4%BD%9C/</loc><lastmod>2022-11-06T01:10:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/about/</loc><lastmod>2022-11-06T17:05:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/categories/%E9%9A%8F%E7%AC%94/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/sponsor/</loc><lastmod>2022-11-21T01:27:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/about/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/about/"
+            href="https://wakehuang.com/en/about/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/about/"
+          href="https://wakehuang.com/about/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/happy-lantern-festival/</loc><lastmod>2022-11-06T14:13:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E6%97%A5%E5%B8%B8/</loc><lastmod>2022-11-06T14:13:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc><lastmod>2022-11-06T14:13:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/html5/</loc><lastmod>2022-11-06T12:01:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/html-canvas-study/</loc><lastmod>2022-11-06T12:01:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/categories/%E7%BC%96%E7%A8%8B/</loc><lastmod>2022-11-06T12:01:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E5%89%8D%E7%AB%AF/</loc><lastmod>2022-11-06T12:01:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E4%BC%A0%E6%92%AD%E5%AD%A6/</loc><lastmod>2022-11-06T12:27:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/computational-communication/</loc><lastmod>2022-11-06T12:27:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/categories/%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0/</loc><lastmod>2022-11-06T12:27:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/categories/%E7%94%B5%E5%BD%B1/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E8%A7%82%E5%90%8E%E6%84%9F/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E9%9F%A9%E5%9B%BD/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://fixit.lruihao.cn/snowpiercer/</loc><lastmod>2022-11-06T18:05:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E5%A4%A7%E5%AD%A6/</loc><lastmod>2022-11-06T01:10:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/%E5%90%90%E6%A7%BD/</loc><lastmod>2022-11-06T01:10:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/untitled/</loc><lastmod>2022-11-06T01:10:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/offline/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>https://wakehuang.com/tags/%E4%BC%A0%E6%92%AD%E5%AD%A6/</loc><lastmod>2022-11-18T23:32:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/computational-communication/</loc><lastmod>2022-11-18T23:32:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/categories/%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0/</loc><lastmod>2022-11-18T23:32:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/categories/%E7%94%B5%E5%BD%B1/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E8%A7%82%E5%90%8E%E6%84%9F/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E9%9F%A9%E5%9B%BD/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/snowpiercer/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E5%A4%A7%E5%AD%A6/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E5%90%90%E6%A7%BD/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/untitled/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/offline/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/offline/"
+            href="https://wakehuang.com/en/offline/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/offline/"
+          href="https://wakehuang.com/offline/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/tags/installation/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/categories/test/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/test/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/print/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/encryption/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/content/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/tags/configuration/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>https://fixit.lruihao.cn/friends/</loc><lastmod>2022-11-05T17:12:52&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>https://wakehuang.com/tags/installation/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/categories/test/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/test/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/print/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/encryption/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/content/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/tags/configuration/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>https://wakehuang.com/friends/</loc><lastmod>2022-11-13T15:28:14&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/friends/"
+            href="https://wakehuang.com/en/friends/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/friends/"
+          href="https://wakehuang.com/friends/"
           /></url><url>
-      <loc>https://fixit.lruihao.cn/categories/documentation/</loc><lastmod>2022-11-05T04:16:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>https://wakehuang.com/categories/course/</loc><lastmod>2022-11-26T22:29:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="https://fixit.lruihao.cn/en/categories/documentation/"
+            href="https://wakehuang.com/en/categories/course/"
             /><xhtml:link
           rel="alternate"
           hreflang="zh-cn"
-          href="https://fixit.lruihao.cn/categories/documentation/"
+          href="https://wakehuang.com/categories/course/"
           /></url></urlset>

@@ -1,5 +1,5 @@
-title = "黄奋斗的数字缓存区"
-baseURL = "https://fixit.lruihao.cn"
+title = "自我周旋-黄奋斗的独立博客"
+baseURL = "https://wakehuang.com/"
 
 # theme
 # 主题
@@ -33,7 +33,7 @@ copyright = ""
 enableRobotsTXT = true
 # whether to use git commit log
 # 是否使用 git 信息
-enableGitInfo = false
+enableGitInfo = true
 # whether to use emoji code
 # 是否使用 emoji 代码
 enableEmoji = true
@@ -101,10 +101,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   keywords = ["Hugo", "FixIt"]
   # site default theme ["light", "dark", "auto"]
   # 网站默认主题 ["light", "dark", "auto"]
-  defaultTheme = "auto"
+  defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/wakehuang/wakehuang.github.io"
+  gitRepo = "https://github.com/wakehuang/hugo-blog"
   # which hash function used for SRI, when empty, no SRI is used ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
@@ -176,7 +176,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = "index"
+      index = ""
       appID = ""
       searchKey = ""
 
@@ -194,10 +194,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.header.title]
       # URL of the LOGO
       # LOGO 的 URL
-      logo = "/fixit.min.svg"
+      logo = "/images/avatar.png"
       # title name
       # 标题名称
-      name = "黄奋斗的数字缓存区"
+      name = "自我周旋"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -212,7 +212,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.header.subtitle]
       # subtitle name
       # 副标题名称
-      name = ""
+      name = "黄奋斗的独立博客"
       # whether to use typeit animation for subtitle name
       # 是否为副标题显示打字机动画
       typeit = false
@@ -457,7 +457,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     pageStyle = "normal"
     # Gravatar is force-used as the author's avatar since v0.2.14
     # 强制使用 Gravatar 作为作者头像 since v0.2.14
-    gravatarForce = true
+    gravatarForce = false
     # FixIt 0.2.17 | CHANGED Auto Bookmark Support
     # If true, save the reading progress when closing the page.
     autoBookmark = true
@@ -517,7 +517,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Post edit since v0.2.14
     # 文章编辑 since v0.2.14
     [params.page.edit]
-      enable = false
+      enable = true
       # Link for fork & edit
       # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
       # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
@@ -568,11 +568,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 赞赏设置
     [params.page.reward]
       enable = true
-      animation = true
+      animation = false
       # position relative to post footer, optional values: ["before", "after"]
       # 相对于页脚的位置，可选值：["before", "after"]
       position = "after"
-      comment = "「觉得内容不错，请作者喝杯牛奶吧～🥛」"
+      comment = "「觉得内容不错，请作者喝杯咖啡吧～☕」"
       [params.page.reward.ways]
         wechatpay = "/images/wechatpay.png"
         alipay = "/images/alipay.png"
@@ -676,8 +676,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Waline comment config (https://waline.js.org) since v0.2.13
       # Waline 评论系统设置 (https://waline.js.org) since v0.2.13
       [params.page.comment.waline]
-        enable = false
-        serverURL = ""
+        enable = true
+        serverURL = "https://waline.wakehuang.com/"
         pageview = false
         emoji = ['//unpkg.com/@waline/emojis@1.1.0/weibo']
         meta = ['nick', 'mail', 'link']
@@ -685,7 +685,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         login = 'enable'
         wordLimit = 0
         pageSize = 10
-        imageUploader = false
+        imageUploader = true
         highlighter = false
         comment = false
         texRenderer = false
@@ -727,7 +727,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Twikoo comment config (https://twikoo.js.org/) since v0.2.13
       # Twikoo 评论系统设置 (https://twikoo.js.org/) since v0.2.13
       [params.page.comment.twikoo]
-        enable = true
+        enable = false
         envId = "https://twikoo.wakehuang.com"
         #region = ""
         #path = "window.location.pathname"
@@ -748,10 +748,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         term = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "1"
-        inputPosition = "top" # top, bottom
+        inputPosition = "bottom" # top, bottom
         lightTheme = "light"
-        darkTheme = "dark_dimmed"
-        lazyLoad = true
+        darkTheme = "dark"
+        lazyLoad = false
     # Third-party library config
     # 第三方库配置
     [params.page.library]
@@ -774,7 +774,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = "Lruihao"
+        name = "wakehuang"
         logoUrl = "/images/avatar.png"
 
   # TypeIt config
@@ -937,7 +937,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.gravatar]
     # Gravatar host, default: "www.gravatar.com"
     # Gravatar 主机，默认：“www.gravatar.com”
-    host = "www.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
+    host = "cn.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
     style = "mp" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
   # Back to top
@@ -1107,50 +1107,47 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.en.menu.main.params]
           icon = "fa-solid fa-archive"
       [[languages.en.menu.main]]
-        identifier = "categories"
+        identifier = "course"
+        name = "Course🔥"
+        url = "categories/course/"
+        weight = 2
+        [languages.en.menu.main.params]
+          icon = "fa-solid fa-book" 
+      [[languages.en.menu.main]]
+        identifier = "categoriess"
         name = "Categories"
         url = "categories/"
-        weight = 2
+        weight = 3
         [languages.en.menu.main.params]
           icon = "fa-solid fa-th"
       [[languages.en.menu.main]]
         identifier = "tags"
-        name = "Tags"
+        name = "tag"
         url = "tags/"
-        weight = 3
-        [languages.en.menu.main.params]
-          icon = "fa-solid fa-tags"
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        name = "Docs"
-        url = "categories/documentation/"
-        title = "Theme Documentation"
         weight = 4
         [languages.en.menu.main.params]
-          icon = "fa-solid fa-book"
-      [[languages.en.menu.main]]
-        identifier = "tests"
-        name = "Tests"
-        url = "tests/"
-        title = "Test for FixIt"
-        weight = 5
-        [languages.en.menu.main.params]
-          draft = true
-          icon = "fa-solid fa-flask"
+          icon = "fa-solid fa-tags"
       [[languages.en.menu.main]]
         identifier = "friends"
         name = "Friends"
         url = "friends/"
-        weight = 6
+        weight = 5
         [languages.en.menu.main.params]
           icon = "fa-solid fa-users"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "about/"
-        weight = 7
+        weight = 6
         [languages.en.menu.main.params]
           icon = "fa-solid fa-info-circle"
+      [[languages.en.menu.main]]
+        identifier = "sponsor"
+        name = "Sponsor"
+        url = "sponsor/"
+        weight = 7
+        [languages.en.menu.main.params]
+          icon = "fa-solid fa-coffee" 
       [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
@@ -1172,8 +1169,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         absoluteURL = false
         [languages.en.params.search.algolia]
           index = "index.en"
-          appID = "YKOM6PKLUY"
-          searchKey = "a44c110d3ac360be2c69cd79d34b77a8"
+          appID = "M46UPXIX7M"
+          searchKey = "5ee25dd172c53300425cb875f851d89d"
       [languages.en.params.home]
         rss = 10
         [languages.en.params.home.profile]
@@ -1181,7 +1178,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           gravatarEmail = ""
           avatarURL = "/images/avatar.png"
           title = "Wake Huang.eth"
-          subtitle = "「 Not afraid of being rejected by thousands of people but surrendering myself 🥁」"
+          subtitle = "「Keep Day 1 🥁」"
           typeit = true
           social = true
           disclaimer = ""
@@ -1213,51 +1210,48 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-archive"
       [[languages.zh-cn.menu.main]]
+        identifier = "course"
+        name = "体系课🔥"
+        url = "categories/course/"
+        weight = 2
+        [languages.zh-cn.menu.main.params]
+          icon = "fa-solid fa-book"      
+      [[languages.zh-cn.menu.main]]
         identifier = "categories"
         name = "分类"
         url = "categories/"
-        weight = 2
+        weight = 3
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-th"
       [[languages.zh-cn.menu.main]]
         identifier = "tags"
         name = "标签"
         url = "tags/"
-        weight = 3
+        weight = 4
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-tags"
       [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        name = "文档"
-        url = "categories/documentation/"
-        title = "主题文档"
-        weight = 4
-        [languages.zh-cn.menu.main.params]
-          icon = "fa-solid fa-book"
-      [[languages.zh-cn.menu.main]]
-        identifier = "tests"
-        name = "测试"
-        url = "tests/"
-        title = "FixIt 测试"
-        weight = 5
-        [languages.zh-cn.menu.main.params]
-          draft = true
-          icon = "fa-solid fa-flask"
-      [[languages.zh-cn.menu.main]]
         identifier = "friends"
-        name = "友链"
+        name = "朋友"
         url = "friends/"
         title = "友情链接"
-        weight = 6
+        weight = 5
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-users"
       [[languages.zh-cn.menu.main]]
         identifier = "about"
         name = "关于"
         url = "about/"
-        weight = 7
+        weight = 6
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-info-circle"
+      [[languages.zh-cn.menu.main]]
+        identifier = "sponsor"
+        name = "请站长喝杯咖啡吧！"
+        url = "sponsor/"
+        weight = 7
+        [languages.zh-cn.menu.main.params]
+          icon = "fa-solid fa-coffee"     
       [[languages.zh-cn.menu.main]]
         identifier = "github"
         pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
@@ -1280,8 +1274,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         absoluteURL = false
         [languages.zh-cn.params.search.algolia]
           index = "index.zh-cn"
-          appID = "YKOM6PKLUY"
-          searchKey = "a44c110d3ac360be2c69cd79d34b77a8"
+          appID = "M46UPXIX7M"
+          searchKey = "5ee25dd172c53300425cb875f851d89d"
       [languages.zh-cn.params.home]
         rss = 10
         [languages.zh-cn.params.home.profile]
@@ -1289,7 +1283,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           gravatarEmail = ""
           avatarURL = "/images/avatar.png"
           title = "黄奋斗.eth"
-          subtitle = "「 人间一趟，摘星踏月 🔥」"
+          subtitle = "在职产品经理，关注新商业世界，认知成长，独立游戏，大前端，Go，AI，Web3 🥳"
           typeit = true
           social = true
           disclaimer = ""

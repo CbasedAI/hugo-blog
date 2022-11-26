@@ -1,10 +1,10 @@
 ---
-title: "#Reboot：重新写博客了！🥳"
+title: "Reboot：重新写博客了！🥳"
 date: 2022-10-30T19:16:05+08:00
 draft: false
 description: ""
 tags: ["Go"]
-categories: ["写作"]
+categories: ["随笔"]
 
 resources:
 - name: "featured-image"
@@ -23,6 +23,6 @@ package main
 import "fmt"
 
 func main() {  
-    fmt.Println("Hello World")
+    fmt.Println("Hello World!")
 }
 ```

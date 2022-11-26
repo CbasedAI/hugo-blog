@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>编程 - 分类 - 自我周旋-黄奋斗的独立博客</title>
+    <link>https://wakehuang.com/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>编程 - 分类 - 自我周旋-黄奋斗的独立博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
+      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://wakehuang.com/categories/%E7%BC%96%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
+  <title>从零学习微信小程序开发（更新中）</title>
+  <link>https://wakehuang.com/miniprogram-basic-development/</link>
+  <pubDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/miniprogram-basic-development/</guid>
+  <description><![CDATA[导读 本文在查阅参考相关资料后，旨在帮助初学者快速理解和入门微信小程序开发的重要概念。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。]]></description>
+</item>
+</channel>
+</rss>

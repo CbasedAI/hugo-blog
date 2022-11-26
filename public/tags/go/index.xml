@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Go - 标签 - 自我周旋-黄奋斗的独立博客</title>
+    <link>https://wakehuang.com/tags/go/</link>
+    <description>Go - 标签 - 自我周旋-黄奋斗的独立博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
+      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</lastBuildDate><atom:link href="https://wakehuang.com/tags/go/" rel="self" type="application/rss+xml" /><item>
+  <title>Reboot：重新写博客了！🥳</title>
+  <link>https://wakehuang.com/reboot/</link>
+  <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
+  <author>黄奋斗.eth</author>
+  <guid>https://wakehuang.com/reboot/</guid>
+  <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) }]]></description>
+</item>
+</channel>
+</rss>

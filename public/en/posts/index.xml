@@ -1,26 +1,26 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>All Posts - 黄奋斗的数字缓存区</title>
-    <link>https://fixit.lruihao.cn/en/posts/</link>
-    <description>All Posts | 黄奋斗的数字缓存区</description>
+    <title>All Posts - 自我周旋-黄奋斗的独立博客</title>
+    <link>https://wakehuang.com/en/posts/</link>
+    <description>All Posts | 自我周旋-黄奋斗的独立博客</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
-      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</lastBuildDate><atom:link href="https://fixit.lruihao.cn/en/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</lastBuildDate><atom:link href="https://wakehuang.com/en/posts/" rel="self" type="application/rss+xml" /><item>
   <title>#Reboot: Blog Again！🥳</title>
-  <link>https://fixit.lruihao.cn/en/reboot/</link>
+  <link>https://wakehuang.com/en/reboot/</link>
   <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
   <author>Wake Huang.eth</author>
-  <guid>https://fixit.lruihao.cn/en/reboot/</guid>
+  <guid>https://wakehuang.com/en/reboot/</guid>
   <description><![CDATA[Good tradition, write a Hello world first:
-1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World&#34;) } ]]></description>
+1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) } ]]></description>
 </item>
 <item>
   <title>#Reboot: Blog Again！🥳</title>
-  <link>https://fixit.lruihao.cn/en/reboot/</link>
+  <link>https://wakehuang.com/en/reboot/</link>
   <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
   <author>Wake Huang.eth</author>
-  <guid>https://fixit.lruihao.cn/en/reboot/</guid>
+  <guid>https://wakehuang.com/en/reboot/</guid>
   <description><![CDATA[Good tradition, write a Hello world first:
-1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World&#34;) } ]]></description>
+1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) } ]]></description>
 </item>
 </channel>
 </rss>

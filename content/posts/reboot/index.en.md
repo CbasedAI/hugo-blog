@@ -7,10 +7,9 @@ description: ""
 tags: ["Go"]
 categories: [""]
 
-
 resources:
 - name: "featured-image"
-  src: "reboot-image.png"
+  src: "computational-communication.png"
 
 lightgallery: true
 
@@ -24,6 +23,6 @@ package main
 import "fmt"
 
 func main() {  
-    fmt.Println("Hello World")
+    fmt.Println("Hello World!")
 }
 ```
