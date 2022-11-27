@@ -1,4 +1,4 @@
-title = "未来道具研究所-黄奋斗的独立博客"
+title = "乘风而游-黄奋斗的博客"
 baseURL = "https://wakehuang.com/"
 
 # theme
@@ -197,7 +197,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = "/images/avatar.png"
       # title name
       # 标题名称
-      name = "未来道具研究所"
+      name = "乘风而游"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -212,7 +212,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.header.subtitle]
       # subtitle name
       # 副标题名称
-      name = "黄奋斗的独立博客"
+      name = "黄奋斗的博客"
       # whether to use typeit animation for subtitle name
       # 是否为副标题显示打字机动画
       typeit = false
@@ -1283,7 +1283,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           gravatarEmail = ""
           avatarURL = "/images/avatar.png"
           title = "黄奋斗.eth"
-          subtitle = "在职产品经理，关注新商业世界，认知成长，独立游戏，大前端，Go，AI，Web3 🥳"
+          subtitle = "产品经理🥳，关注有趣的事物，包括但不局限：新商业世界，心智成长，独立开发，AI，Web3"
           typeit = true
           social = true
           disclaimer = ""

@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>所有文章 - 未来道具研究所-黄奋斗的独立博客</title>
+    <title>所有文章 - 乘风而游-黄奋斗的博客</title>
     <link>https://wakehuang.com/posts/</link>
-    <description>所有文章 | 未来道具研究所-黄奋斗的独立博客</description>
+    <description>所有文章 | 乘风而游-黄奋斗的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
       <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</lastBuildDate><atom:link href="https://wakehuang.com/posts/" rel="self" type="application/rss+xml" /><item>
   <title>从零开始学习微信小程序开发（20221126更新）</title>
@@ -13,12 +13,12 @@
   <description><![CDATA[导读 本专题旨在帮助初学者快速理解和入门微信小程序开发的重要概念和基本用法。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。小程序借助]]></description>
 </item>
 <item>
-  <title>从零开始学习Git版本控制（20221127更新）</title>
+  <title>像玩RPG游戏一样学习Git版本管理（20221127更新）</title>
   <link>https://wakehuang.com/learn-git-from-scratch/</link>
   <pubDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>黄奋斗.eth</author>
   <guid>https://wakehuang.com/learn-git-from-scratch/</guid>
-  <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 3. 初次运行 Git 前的配置 3.1 在 Git 中设置用户名 Git 使用用户名user.n]]></description>
+  <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1]]></description>
 </item>
 <item>
   <title>无题</title>
@@ -55,12 +55,12 @@
   <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) }]]></description>
 </item>
 <item>
-  <title>从零开始学习Git版本控制（20221127更新）</title>
+  <title>像玩RPG游戏一样学习Git版本管理（20221127更新）</title>
   <link>https://wakehuang.com/learn-git-from-scratch/</link>
   <pubDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>黄奋斗.eth</author>
   <guid>https://wakehuang.com/learn-git-from-scratch/</guid>
-  <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 3. 初次运行 Git 前的配置 3.1 在 Git 中设置用户名 Git 使用用户名user.n]]></description>
+  <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1]]></description>
 </item>
 <item>
   <title>从零开始学习微信小程序开发（20221126更新）</title>
