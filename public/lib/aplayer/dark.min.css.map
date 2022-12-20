@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "dark.min.css",
-	"sourceRoot": "/Users/wakehuang/sync/blog",
+	"sourceRoot": "/Users/wakehuang/work/blog",
 	"sources": [
 		"themes/FixIt/assets/lib/aplayer/dark.scss"
 	],

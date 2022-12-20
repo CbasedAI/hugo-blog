@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>像玩RPG游戏一样学习Git版本管理（20221127更新） - 乘风而游-黄奋斗的博客</title><meta name="author" content="黄奋斗.eth">
+    <title>像玩RPG游戏一样学习Git版本管理（20221127更新） - Wake&#39;s Blog</title><meta name="author" content="Wake">
 <meta name="author-link" content="https://wakehuang.com/about">
 <meta name="description" content="导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1" /><meta name="keywords" content='Git' /><meta itemprop="name" content="像玩RPG游戏一样学习Git版本管理（20221127更新）">
 <meta itemprop="description" content="导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1"><meta itemprop="datePublished" content="2022-11-26T23:25:51+08:00" />
-<meta itemprop="dateModified" content="2022-11-27T01:40:54+08:00" />
+<meta itemprop="dateModified" content="2022-11-27T19:04:17+08:00" />
 <meta itemprop="wordCount" content="630"><meta itemprop="image" content="https://wakehuang.com/learn-git-from-scratch/learn-git-from-scratch.png">
 <meta itemprop="keywords" content="Git," /><meta property="og:title" content="像玩RPG游戏一样学习Git版本管理（20221127更新）" />
 <meta property="og:description" content="导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wakehuang.com/learn-git-from-scratch/" /><meta property="og:image" content="https://wakehuang.com/learn-git-from-scratch/learn-git-from-scratch.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-26T23:25:51+08:00" />
-<meta property="article:modified_time" content="2022-11-27T01:40:54+08:00" />
+<meta property="article:modified_time" content="2022-11-27T19:04:17+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://wakehuang.com/learn-git-from-scratch/learn-git-from-scratch.png"/>
@@ -25,7 +25,7 @@
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://wakehuang.com/learn-git-from-scratch/" /><link rel="prev" href="https://wakehuang.com/learn-miniprogram-from-scratch/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://wakehuang.com/learn-git-from-scratch/" /><link rel="prev" href="https://wakehuang.com/learn-miniprogram-from-scratch/" /><link rel="next" href="https://wakehuang.com/2022-review/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
@@ -40,7 +40,7 @@
               "width":  1470 ,
               "height":  708 
             }],"genre": "posts","keywords": "Git","wordcount":  630 ,
-    "url": "https:\/\/wakehuang.com\/learn-git-from-scratch\/","datePublished": "2022-11-26T23:25:51+08:00","dateModified": "2022-11-27T01:40:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+    "url": "https:\/\/wakehuang.com\/learn-git-from-scratch\/","datePublished": "2022-11-26T23:25:51+08:00","dateModified": "2022-11-27T19:04:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
       "@type": "Organization",
       "name": "wakehuang","logo": {
           "@type": "ImageObject",
@@ -49,21 +49,21 @@
           "height":  1080 
         }},"author": {
         "@type": "Person",
-        "name": "黄奋斗.eth"
+        "name": "Wake"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="乘风而游-黄奋斗的博客"><img
+      <a href="/" title="Wake&#39;s Blog"><img
     class="lazyload logo"
     src="/svg/loading.min.svg"
     data-src="/images/avatar.png"
     data-srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
     data-sizes="auto"
-    alt="乘风而游-黄奋斗的博客"
-    title="乘风而游-黄奋斗的博客" width="1080" height="1080"/><span class="header-title-text">乘风而游</span></a><span class="header-subtitle">黄奋斗的博客</span></div>
+    alt="Wake&#39;s Blog"
+    title="Wake&#39;s Blog" width="1080" height="1080"/><span class="header-title-text">Wake&#39;s Blog</span></a><span class="header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -152,14 +152,14 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="乘风而游-黄奋斗的博客"><img
+        <a href="/" title="Wake&#39;s Blog"><img
     class="lazyload logo"
     src="/svg/loading.min.svg"
     data-src="/images/avatar.png"
     data-srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
     data-sizes="auto"
     alt="/images/avatar.png"
-    title="/images/avatar.png" width="1080" height="1080"/><span class="header-title-text">乘风而游</span></a><span class="header-subtitle">黄奋斗的博客</span></div>
+    title="/images/avatar.png" width="1080" height="1080"/><span class="header-title-text">Wake&#39;s Blog</span></a><span class="header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -290,8 +290,8 @@
     data-src="/images/avatar.png"
     data-srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
     data-sizes="auto"
-    alt="黄奋斗.eth"
-    title="黄奋斗.eth" width="1080" height="1080"/>&nbsp;黄奋斗.eth</a></span>
+    alt="Wake"
+    title="Wake" width="1080" height="1080"/>&nbsp;Wake</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程开发</a>&ensp;<a href="/categories/course/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 精选课</a></span></div>
       <div class="post-meta-line"><span title=2022-11-26&#32;23:25:51><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-26">2022-11-26</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 约 630 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 预计阅读 2 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="像玩RPG游戏一样学习Git版本管理（20221127更新）">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
@@ -451,12 +451,12 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title=2022-11-27&#32;01:40:54>更新于 2022-11-27&nbsp;<a class="git-hash" href="https://github.com/wakehuang/hugo-blog/commit/e200b318ceb337fd0a9714a30c5a5908aaee70a3" rel="external nofollow noopener noreferrer" target="_blank" title="commit by Wake Huang(work@wakehuang.com) e200b318ceb337fd0a9714a30c5a5908aaee70a3: update post"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i>e200b31</a></span>
+        <span title=2022-11-27&#32;19:04:17>更新于 2022-11-27&nbsp;<a class="git-hash" href="https://github.com/wakehuang/hugo-blog/commit/fb8ece78093d82628fa2c0a7998f34221707724a" rel="external nofollow noopener noreferrer" target="_blank" title="commit by Wake Huang(work@wakehuang.com) fb8ece78093d82628fa2c0a7998f34221707724a: update blog config"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i>fb8ece7</a></span>
       </div></div>
     <div class="post-info-line">
       <div class="post-info-md"><span><a href="/learn-git-from-scratch/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span><span><a href="https://github.com/wakehuang/hugo-blog/edit/main/content/posts/learn-git-from-scratch%20/index.zh-cn.md" title="编辑此页"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-edit">编辑此页</a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://wakehuang.com/learn-git-from-scratch/" data-title="像玩RPG游戏一样学习Git版本管理（20221127更新）" data-via="0xwakehuang" data-hashtags="Git"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://wakehuang.com/learn-git-from-scratch/" data-title="像玩RPG游戏一样学习Git版本管理（20221127更新）" data-hashtags="Git"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
   <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://wakehuang.com/learn-git-from-scratch/" data-hashtag="Git"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
   <a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://wakehuang.com/learn-git-from-scratch/" data-title="像玩RPG游戏一样学习Git版本管理（20221127更新）"><i class="fa-brands fa-hacker-news fa-fw" aria-hidden="true"></i></a>
   <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://wakehuang.com/learn-git-from-scratch/" data-title="像玩RPG游戏一样学习Git版本管理（20221127更新）"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
@@ -475,17 +475,18 @@
     </section>
   </div>
 
-  <div class="post-nav"><a href="/learn-miniprogram-from-scratch/" class="post-nav-item" rel="prev" title="从零开始学习微信小程序开发（20221126更新）"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>从零开始学习微信小程序开发（20221126更新）</a></div>
+  <div class="post-nav"><a href="/learn-miniprogram-from-scratch/" class="post-nav-item" rel="prev" title="从零开始学习微信小程序开发（20221126更新）"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>从零开始学习微信小程序开发（20221126更新）</a>
+      <a href="/2022-review/" class="post-nav-item" rel="next" title="2022">2022<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div class="post-reward">
     <div class="comment">「觉得内容不错，请作者喝杯咖啡吧～☕」</div>
     <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
     <label class="reward-button" for="fi-reward">赞赏</label>
     <div class="reward-ways"><div>
-            <img src="/images/alipay.png" alt="黄奋斗.eth 支付宝">
+            <img src="/images/alipay.png" alt="Wake 支付宝">
             <span>支付宝</span>
           </div><div>
-            <img src="/images/wechatpay.png" alt="黄奋斗.eth 微信">
+            <img src="/images/wechatpay.png" alt="Wake 微信">
             <span>微信</span>
           </div></div>
   </div><div id="comments"><div id="waline" class="comment"></div><noscript>
@@ -516,7 +517,7 @@
     <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.105.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.17-RC"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://wakehuang.com/about"target="_blank" rel="external nofollow noopener noreferrer">黄奋斗.eth</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='网站运行中 ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i>&nbsp网站已经安全运行了&nbsp;<span class="run-times">网站运行中 ...</span></span></div><div class="footer-line ibruce">
+              <a href="https://wakehuang.com/about"target="_blank" rel="external nofollow noopener noreferrer">Wake</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='网站运行中 ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i>&nbsp网站已经安全运行了&nbsp;<span class="run-times">网站运行中 ...</span></span></div><div class="footer-line ibruce">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

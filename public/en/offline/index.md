@@ -11,6 +11,6 @@ keywords:
 
 ---
 
-> Author: [黄奋斗.eth](https://wakehuang.com/about)  
+> Author: [Wake](https://wakehuang.com/about)  
 > URL: https://wakehuang.com/en/offline/  
 

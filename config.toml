@@ -1,4 +1,4 @@
-title = "乘风而游-黄奋斗的博客"
+title = "Wake's Blog"
 baseURL = "https://wakehuang.com/"
 
 # theme
@@ -197,7 +197,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = "/images/avatar.png"
       # title name
       # 标题名称
-      name = "乘风而游"
+      name = "Wake's Blog"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -212,7 +212,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.header.subtitle]
       # subtitle name
       # 副标题名称
-      name = "黄奋斗的博客"
+      name = ""
       # whether to use typeit animation for subtitle name
       # 是否为副标题显示打字机动画
       typeit = false
@@ -1028,7 +1028,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Author config
 # 作者配置
 [author]
-  name = "黄奋斗.eth"
+  name = "Wake"
   email = "mail@wakehuang.com"
   link = "https://wakehuang.com/about"
 
@@ -1187,13 +1187,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           paginate = 6
       [languages.en.params.social]
         GitHub = "wakehuang"
-        Twitter ="0xwakehuang"
+        Twitter =""
         Email = "mail@wakehuang.com"
         RSS = true
-        Zhihu = "artinhuang"
-        Douban = "67080615"
+        Zhihu = ""
+        Douban = ""
         QQ = "1927632191"
-        Bilibili = "89422932"
+        Bilibili = ""
 
   [languages.zh-cn]
     weight = 2
@@ -1282,8 +1282,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           enable = true
           gravatarEmail = ""
           avatarURL = "/images/avatar.png"
-          title = "黄奋斗.eth"
-          subtitle = "产品经理，关注有趣的事物，包括但不局限：新商业世界，心智成长，独立开发，AI，Web3 🥳"
+          title = "Wake"
+          subtitle = "产品经理，努力实现小目标中💪"
           typeit = true
           social = true
           disclaimer = ""
@@ -1292,13 +1292,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           paginate = 6
       [languages.zh-cn.params.social]
         GitHub = "wakehuang"
-        Twitter ="0xwakehuang"
+        Twitter =""
         Email = "mail@wakehuang.com"
         RSS = true
-        Zhihu = "artinhuang"
-        Douban = "67080615"
+        Zhihu = ""
+        Douban = ""
         QQ = "1927632191"
-        Bilibili = "89422932"
+        Bilibili = ""
       [languages.zh-cn.params.pangu]
         enable = true
       [languages.zh-cn.params.watermark]

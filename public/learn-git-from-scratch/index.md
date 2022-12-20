@@ -101,6 +101,6 @@ git config --global user.name
 
 ---
 
-> 作者: [黄奋斗.eth](https://wakehuang.com/about)  
+> 作者: [Wake](https://wakehuang.com/about)  
 > URL: https://wakehuang.com/learn-git-from-scratch/  
 

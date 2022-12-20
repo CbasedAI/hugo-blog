@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>course - Category - 乘风而游-黄奋斗的博客</title>
+    <title>course - Category - Wake&#39;s Blog</title>
     <link>https://wakehuang.com/en/categories/course/</link>
-    <description>course - Category - 乘风而游-黄奋斗的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
-      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://wakehuang.com/en/categories/course/" rel="self" type="application/rss+xml" /></channel>
+    <description>course - Category - Wake&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mail@wakehuang.com (Wake)</managingEditor>
+      <webMaster>mail@wakehuang.com (Wake)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://wakehuang.com/en/categories/course/" rel="self" type="application/rss+xml" /></channel>
 </rss>

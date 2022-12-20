@@ -1,16 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>乘风而游-黄奋斗的博客</title>
+    <title>Wake&#39;s Blog</title>
     <link>https://wakehuang.com/</link>
     <description>Hugo 主题 - FixIt</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (黄奋斗.eth)</managingEditor>
-      <webMaster>mail@wakehuang.com (黄奋斗.eth)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>mail@wakehuang.com (Wake)</managingEditor>
+      <webMaster>mail@wakehuang.com (Wake)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Dec 2022 01:20:00 &#43;0800</lastBuildDate>
       <atom:link href="https://wakehuang.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>2022</title>
+  <link>https://wakehuang.com/2022-review/</link>
+  <pubDate>Sun, 18 Dec 2022 01:20:00 &#43;0800</pubDate>
+  <author>Wake</author>
+  <guid>https://wakehuang.com/2022-review/</guid>
+  <description><![CDATA[时光呀，就像是太阳升起又落下，也像是雁群始终向南飞去 留给人的体感是那么漫长而又短暂 在你的一生，有人匆匆路过 有人在你身边呆了一会儿，却永远改变]]></description>
+</item>
+<item>
   <title>像玩RPG游戏一样学习Git版本管理（20221127更新）</title>
   <link>https://wakehuang.com/learn-git-from-scratch/</link>
   <pubDate>Sat, 26 Nov 2022 23:25:51 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/learn-git-from-scratch/</guid>
   <description><![CDATA[导读 本专题旨在帮助读者朋友们，快速入门Git版本管理工具的重要概念和基本用法。 本文思维导图 暂缺 初识Git 3. 游戏开始前（初次运行 Git 前的配置） 3.1.1]]></description>
 </item>
@@ -18,7 +26,7 @@
   <title>从零开始学习微信小程序开发（20221126更新）</title>
   <link>https://wakehuang.com/learn-miniprogram-from-scratch/</link>
   <pubDate>Thu, 24 Nov 2022 00:00:00 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/learn-miniprogram-from-scratch/</guid>
   <description><![CDATA[导读 本专题旨在帮助初学者快速理解和入门微信小程序开发的重要概念和基本用法。 小程序宿主环境 微信客户端给小程序所提供的环境为宿主环境。小程序借助]]></description>
 </item>
@@ -26,7 +34,7 @@
   <title>Reboot：重新写博客了！🥳</title>
   <link>https://wakehuang.com/reboot/</link>
   <pubDate>Sun, 30 Oct 2022 19:16:05 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/reboot/</guid>
   <description><![CDATA[优良传统，先写一个 Hello world： 1 2 3 4 5 6 7 package main import &#34;fmt&#34; func main() { fmt.Println(&#34;Hello World!&#34;) }]]></description>
 </item>
@@ -34,7 +42,7 @@
   <title>计算传播学：传播学研究新视角</title>
   <link>https://wakehuang.com/computational-communication/</link>
   <pubDate>Mon, 25 Apr 2016 23:29:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/computational-communication/</guid>
   <description><![CDATA[概述 近年来，由于人们获取信息、传播信息的方式的显著变化，经典的大众传播理论范式已经无法满足现实需要。而涉及领域广泛的计算传播学应运而生蓬勃发]]></description>
 </item>
@@ -42,7 +50,7 @@
   <title>雪国列车</title>
   <link>https://wakehuang.com/snowpiercer/</link>
   <pubDate>Fri, 02 Oct 2015 23:20:55 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/snowpiercer/</guid>
   <description><![CDATA[雪国列车里狭窄逼仄如同产道的的车厢场景原本注定是要大放异彩的，而事实上，在影片的前半段也确实如此：单机游戏闯关般的情节环环相扣，悬念此起彼伏]]></description>
 </item>
@@ -50,7 +58,7 @@
   <title>无题</title>
   <link>https://wakehuang.com/untitled/</link>
   <pubDate>Wed, 13 Nov 2013 18:48:59 &#43;0800</pubDate>
-  <author>黄奋斗.eth</author>
+  <author>Wake</author>
   <guid>https://wakehuang.com/untitled/</guid>
   <description><![CDATA[<p>2013年的十一月，我受困于自己人生的严冬，夭折成龙，不得解脱。</p>
 <p>每到星期三晚间这个时候，我总像一条色彩斑斓的毛毛虫四处蠕动着（要是有女生看到我这样肯定会忍不住惊声尖叫），无论是软趴趴地趴在书桌前，还是干脆就像一具冰冷的尸体一般一头睡倒在床榻上，而更多的时候就像是那些电视常出现的医疗场景里的身着白衣的医护人员一样，在无影的手术灯冷彻灯光的照射下，围着眼前宛若巨大的子宫一般的电脑，手指纷舞，面无血色地挥霍着自己余下已经不多的时光，至于节操什么的，青春什么的我已经忘了是什么东西&hellip;..</p>

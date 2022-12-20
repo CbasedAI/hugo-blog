@@ -3,7 +3,7 @@ title: "像玩RPG游戏一样学习Git版本管理（20221127更新）"
 subtitle: ""
 date: 2022-11-26T23:25:51+08:00
 draft: false
-author: "黄奋斗.eth"
+author: "Wake"
 authorLink: ""
 authorEmail: ""
 description: ""
