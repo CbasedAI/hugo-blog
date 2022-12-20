@@ -2,8 +2,8 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://wakehuang.com/2022-review/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://wakehuang.com/categories/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/2022-review/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/categories/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
             href="https://wakehuang.com/en/categories/"
@@ -12,7 +12,7 @@
           hreflang="zh-cn"
           href="https://wakehuang.com/categories/"
           /></url><url>
-      <loc>https://wakehuang.com/posts/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/posts/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
             href="https://wakehuang.com/en/posts/"
@@ -21,7 +21,7 @@
           hreflang="zh-cn"
           href="https://wakehuang.com/posts/"
           /></url><url>
-      <loc>https://wakehuang.com/tags/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/tags/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
             href="https://wakehuang.com/en/tags/"
@@ -30,7 +30,7 @@
           hreflang="zh-cn"
           href="https://wakehuang.com/tags/"
           /></url><url>
-      <loc>https://wakehuang.com/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>https://wakehuang.com/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
             href="https://wakehuang.com/en/"
@@ -39,8 +39,8 @@
           hreflang="zh-cn"
           href="https://wakehuang.com/"
           /></url><url>
-      <loc>https://wakehuang.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://wakehuang.com/tags/%E6%80%BB%E7%BB%93%E5%A4%8D%E7%9B%98/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://wakehuang.com/tags/%E6%80%BB%E7%BB%93%E5%A4%8D%E7%9B%98/</loc><lastmod>2022-12-21T00:43:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://wakehuang.com/tags/git/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://wakehuang.com/learn-git-from-scratch/</loc><lastmod>2022-12-21T00:40:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://wakehuang.com/learn-miniprogram-from-scratch/</loc><lastmod>2022-11-27T01:40:54&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
